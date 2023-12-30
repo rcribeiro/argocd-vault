@@ -148,7 +148,7 @@ vault write auth/kubernetes/config \
 vault write auth/kubernetes/role/schoolapp \
     bound_service_account_names=schoolapp \
     bound_service_account_namespaces=schoolapp \
-    policies=schoolapp
+    policies=schoolapp \
     ttl=5s \
     max_ttl=20s
 ```
